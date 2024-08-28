@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myElement {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            transition: transform 2s;
+        }
+
+        #myElement.transitioned {
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="myElement">Content Here</div>
+    <script>
+        document.getElementById("myElement").addEventListener("click", function (event) {
+            event.target.classList.add("transitioned");
+
+            event.target.addEventListener("transitionend", function () {
+                event.target.style.backgroundColor = "red";
+            }, { once: true });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.plusIcon svg {
+  width: 30px;
+  color: white;
+}
+
+.container {
+  background-color: #343a40;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plusIcon {
+  position: absolute;
+  top: 2%;
+  left: 27%;
+
+  /* transform: translateY(-49%); */
+}
+.isSpining {
+  transform: rotate(135deg);
+  transition: all 1s;
+}
+
+.allItems {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  position: absolute;
+  top: 45%;
+  left: 46%;
+}
+
+#menu1 {
+  background-color: #ff2972;
+  height: 3px;
+  width: 30px;
+  position: absolute;
+  top: -25px;
+  left: 17px;
+  border-radius: 3px;
+  transition: all 1s;
+}
+
+#menu2 {
+  background-color: #fee800;
+  height: 3px;
+  width: 30px;
+  position: absolute;
+  top: -13px;
+  left: 44px;
+  transform: rotate(45deg);
+  border-radius: 3px;
+  transition: all 1s;
+}
+#menu3 {
+  background-color: #04fc43;
+  height: 3px;
+  width: 30px;
+  position: absolute;
+  top: 14px;
+  left: 56px;
+  transform: rotate(90deg);
+  border-radius: 3px;
+  transition: all 1s;
+}
+#menu4 {
+  background-color: #fe00f1;
+  height: 3px;
+  width: 30px;
+  position: absolute;
+  top: 42px;
+  left: 45px;
+  transform: rotate(-45deg);
+  border-radius: 3px;
+  transition: all 1s;
+}
+#menu5 {
+  background-color: #00b0fe;
+  height: 3px;
+  width: 30px;
+  position: absolute;
+  top: 53px;
+  left: 17px;
+  border-radius: 3px;
+  transition: all 1s;
+}
+#menu6 {
+  background-color: #fea600;
+  height: 3px;
+  width: 30px;
+  position: absolute;
+  top: 42px;
+  left: -11px;
+  transform: rotate(45deg);
+  border-radius: 3px;
+  transition: all 1s;
+}
+#menu7 {
+  background-color: #a529ff;
+  height: 3px;
+  width: 30px;
+  position: absolute;
+  top: 14px;
+  left: -23px;
+  transform: rotate(90deg);
+  border-radius: 3px;
+  transition: all 1s;
+}
+#menu8 {
+  background-color: #01bdab;
+  height: 3px;
+  width: 30px;
+  position: absolute;
+  top: -13px;
+  left: -11px;
+  transform: rotate(-45deg);
+  border-radius: 3px;
+  transition: all 1s;
+}
+
+#menu1.item1 {
+  position: absolute;
+  top: -150px;
+  transform: rotate(320deg);
+  transition: all 1s;
+}
+
+#menu2.item2 {
+  position: absolute;
+  top: -90px;
+  left: 136px;
+  transform: rotate(320deg);
+  transition: all 1s;
+}
+#menu3.item3 {
+  position: absolute;
+  left: 181px;
+  transform: rotate(320deg);
+  transition: all 1s;
+}
+
+#menu4.item4 {
+  position: absolute;
+  top: 119px;
+  left: 137px;
+  transform: rotate(320deg);
+  transition: all 1s;
+}
+#menu5.item5 {
+  position: absolute;
+  top: 178px;
+  transform: rotate(320deg);
+  transition: all 1s;
+}
+#menu6.item6 {
+  position: absolute;
+  top: 119px;
+  left: -103px;
+  transform: rotate(320deg);
+  transition: all 1s;
+}
+#menu7.item7 {
+  position: absolute;
+  left: -148px;
+  transform: rotate(320deg);
+  transition: all 1s;
+}
+
+#menu8.item8 {
+  position: absolute;
+  top: -90px;
+  left: -103px;
+  transform: rotate(320deg);
+  transition: all 1s;
+}
+
+/* after effect */
+
+#menu1.fele {
+  height: 34px;
+  width: 34px;
+  border: 1px solid #ff2972;
+  box-shadow: 1px 1px 10px #ff2972;
+  background: none;
+}
+#menu1.fele:hover {
+  background-color: #ff2970b2;
+}
+#menu1.fele .svgIcon svg:hover {
+  transition: all 0.4s;
+  color: #343a40;
+}
+
+#menu2.fele {
+  height: 34px;
+  width: 34px;
+  border: 1px solid #fee800;
+  box-shadow: 1px 1px 10px #fee800;
+  background: none;
+}
+#menu2.fele:hover {
+  background-color: #fee900a2;
+}
+#menu2.fele .svgIcon svg:hover {
+  transition: all 0.4s;
+  color: #343a40;
+}
+#menu3.fele {
+  height: 34px;
+  width: 34px;
+  border: 1px solid #04fc43;
+  box-shadow: 1px 1px 10px #04fc43;
+  background: none;
+}
+#menu3.fele:hover {
+  background-color: #04fc42a6;
+}
+#menu3.fele .svgIcon svg:hover {
+  transition: all 0.4s;
+  color: #343a40;
+}
+#menu4.fele {
+  height: 34px;
+  width: 34px;
+  border: 1px solid #fe00f1;
+  box-shadow: 1px 1px 10px #fe00f1;
+  background: none;
+}
+#menu4.fele:hover {
+  background-color: #fe00f1a1;
+}
+#menu4.fele .svgIcon svg:hover {
+  transition: all 0.4s;
+  color: #343a40;
+}
+#menu5.fele {
+  height: 34px;
+  width: 34px;
+  border: 1px solid #00b0fe;
+  box-shadow: 1px 1px 10px #00b0fe;
+  background: none;
+}
+#menu5.fele:hover {
+  background-color: #00b2feb2;
+}
+#menu5.fele .svgIcon svg:hover {
+  transition: all 0.4s;
+  color: #343a40;
+}
+#menu6.fele {
+  height: 34px;
+  width: 34px;
+  border: 1px solid #fea600;
+  box-shadow: 1px 1px 10px #fea600;
+  background: none;
+}
+#menu6.fele:hover {
+  background-color: #fea500af;
+}
+#menu6.fele .svgIcon svg:hover {
+  transition: all 0.4s;
+  color: #343a40;
+}
+#menu7.fele {
+  height: 34px;
+  width: 34px;
+  border: 1px solid #a529ff;
+  box-shadow: 1px 1px 10px #a529ff;
+  background: none;
+}
+#menu7.fele:hover {
+  background-color: #a629ffa6;
+}
+#menu7.fele .svgIcon svg:hover {
+  transition: all 0.4s;
+  color: #343a40;
+}
+#menu8.fele {
+  height: 34px;
+  width: 34px;
+  border: 1px solid #01bdab;
+  box-shadow: 1px 1px 10px #01bdab;
+  background: none;
+}
+#menu8.fele:hover {
+  background-color: #01bdaaa9;
+}
+#menu8.fele .svgIcon svg:hover {
+  transition: all 0.4s;
+  color: #343a40;
+}
+/* For SVG */
+
+.svgIcon svg {
+  transform: rotate(45deg);
+  padding: 5px;
+}
+.svgIcon {
+  display: none;
+}
+.visibleIcon {
+  display: block;
+}
+
+.svg1 {
+  color: #ff2972;
+}
+
+.svg2 {
+  color: #fee800;
+}
+.svg3 {
+  color: #04fc43;
+}
+.svg4 {
+  color: #fe00f1;
+}
+.svg5 {
+  color: #00b0fe;
+}
+.svg6 {
+  color: #fea600;
+}
+.svg7 {
+  color: #a529ff;
+}
+.svg8 {
+  color: #01bdab;
+}
